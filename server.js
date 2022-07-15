@@ -69,7 +69,7 @@ const paddlingSpots = {
 	},
 	'saspamco paddling trail': {
 		id: '0008',
-		locationName: 'Mission Reach Paddling Trail',
+		locationName: 'Saspamco Paddling Trail',
 		city: 'San Antonio',
 		state: 'Texas',
 		bodyWaterType: 'River',
