@@ -1,6 +1,7 @@
 const { request } = require('express')
 const express = require('express')
 const app = express()
+const cors = require('cors')
 const PORT = 8000
 
 const paddlingSpots = {
@@ -87,8 +88,14 @@ const paddlingSpots = {
 	},
 }
 
+app.use(cors())
+
 app.get('/', (req, res) => {
 	res.sendFile(__dirname + '/index.html')
+})
+
+app.get('/api/', (req, res) => {
+	res.json(paddlingSpots)
 })
 
 app.get('/api/:locationName', (req, res) => {
