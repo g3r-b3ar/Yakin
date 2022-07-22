@@ -1,8 +1,11 @@
-const { request } = require('express')
 const express = require('express')
 const app = express()
 const cors = require('cors')
 const PORT = 8000
+
+
+app.use(express.static('public')) // makes everything in the public folder static
+
 
 const paddlingSpots = {
 	'san marcos river': {

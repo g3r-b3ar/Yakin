@@ -1,0 +1,19 @@
+h1 {
+    color: red;
+}
+#map { 
+    height: auto;
+    width: 60%; 
+    /* outline: 2px solid blue; */
+}
+section.top {
+    display: flex;
+    height: 500px;
+    /* outline: 2px solid red; */
+}
+section.bottom {
+    display: block;
+}
+.locationInfo {
+    width: 40%;
+}
