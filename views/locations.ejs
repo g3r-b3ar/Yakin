@@ -1,16 +1,25 @@
 <%- include('partials/header') -%>
 
-<body>
+<body class="container">
   <section class="top">
     <div class="container">
-      <h1>Yakin' | Your community driven kayaking guide</h1>
+      <h1>Yakin' | Your Community Driven Kayaking Guide</h1>
     </div>
   </section>
 
-  <div class="container" id="map"></div>
+  <section class="heading-info">
+    <h3><%= mapped %> Locations Mapped by our Community!</h3>
+    <p>Use the map to locate or plan your next kayaking adventure! Do you know a good paddling spot that's not on our map? Feel free to add it so our community can enjoy it too.
+    </p>
+  </section>
 
-  <section>
-    <h2>Search one of the locations below</h2>
+  <section class="map-container">
+    <div class=" container" id="map">
+    </div>
+  </section>
+
+  <section class="locationDetailList">
+    <p>To get a detailed look at a location click one of the links below</p>
     <% places.forEach( el => { %>
     <li class='locationItem'>
       <a href="/locations/<%= el._id%>">

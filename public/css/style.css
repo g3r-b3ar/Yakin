@@ -1,20 +1,26 @@
 h1 {
     color: rgb(0, 183, 255);
     text-align: center;
-}
-#map {
-    height: 600px;
-    width: 60%;
-    display: block;
-    /* outline: 2px solid blue; */
+    margin: 20px;
 }
 section.top {
     display: flex;
     /* outline: 2px solid red; */
+}
+#map {
+    height: 600px;
+    width: auto;
+    display: block;
+    /* outline: 2px solid blue; */
 }
 section.bottom {
     display: block;
 }
 .locationInfo {
     width: 40%;
+}
+
+.locationDetailList,
+.heading-info {
+    margin: 20px 0;
 }
