@@ -1,0 +1,18 @@
+<%- include('partials/header') -%>
+
+<section class="top">
+  <div class="locationInfo">
+    <h1>Welcome to Yakin'</h1>
+    <input type="text" />
+    <button>Search All the Spots</button>
+    <h2>Location Name: <%= places.locationName %></h2>
+    <h3>City: <%= places.city %></h3>
+    <h3>State: <%= places.state %></h3>
+    <h3>Body of Water Type:</h3>
+    <h3>Difficulty:</h3>
+    <h3>Rating:</h3>
+  </div>
+  <div id="map"></div>
+</section>
+
+<%- include('partials/footer') -%>

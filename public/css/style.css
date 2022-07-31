@@ -1,14 +1,15 @@
-h1{
-    color: red;
+h1 {
+    color: rgb(0, 183, 255);
+    text-align: center;
 }
-#map { 
-    height: auto;
-    width: 60%; 
+#map {
+    height: 600px;
+    width: 60%;
+    display: block;
     /* outline: 2px solid blue; */
 }
 section.top {
     display: flex;
-    height: 500px;
     /* outline: 2px solid red; */
 }
 section.bottom {

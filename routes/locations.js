@@ -2,7 +2,12 @@ const express = require('express')
 const router = express.Router()
 const locationsController = require('../controllers/locations')
 
-router.get('/', locationsController.getLocations)
+//for all locations
+router.get('/', locationsController.getAllLocations)
+router.get(' ', locationsController.getAllLocations)
+
+//for specific location
+router.get('/:id', locationsController.getOneLocation)
 
 router.post('/createLocation', locationsController.createLocations)
 
